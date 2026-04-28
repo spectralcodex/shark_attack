@@ -17,9 +17,10 @@ def product_page():
         productID = request.form.get('productID')
         print(productID)
 
-        server = 'tcp:techchipsserver1.database.windows.net' 
-        database = 'TechChips' 
-        username = 'techchip_admin' 
+        # Server connections
+        server = 'tcp:techchipsdbserver1.database.windows.net'
+        database = 'TechChipsDB' 
+        username = 'techchips_admin' 
         password = '>mxvz)tx82xvYWU'
 
         if os.name == 'nt':
